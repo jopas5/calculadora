@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    
+    <div class="calculadora">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button class="limpiar" onclick="LimpiarDisplay()">C</button>
+            <button class="operador" onclick="AñadirAlDisplay('/')">/</button>
+            <button class="operador" onclick="AñadirAlDisplay('*')">*</button>
+            <button class="operador" onclick="AñadirAlDisplay('-')">-</button>
+            <button onclick="AñadirAlDisplay('7')">7</button>
+            <button onclick="AñadirAlDisplay('8')">8</button>
+            <button onclick="AñadirAlDisplay('9')">9</button>
+            <button class="dos-filas" onclick="AñadirAlDisplay('+')">+</button>
+            <button onclick="AñadirAlDisplay('4')">4</button>
+            <button onclick="AñadirAlDisplay('5')">5</button>
+            <button onclick="AñadirAlDisplay('6')">6</button>           
+            <button onclick="AñadirAlDisplay('1')">1</button>
+            <button onclick="AñadirAlDisplay('2')">2</button>
+            <button onclick="AñadirAlDisplay('3')">3</button>
+            <button class="calcular" onclick="calcular()">=</button>
+            <button class="cero" onclick="AñadirAlDisplay('0')">0</button>
+            <button class="decimal" onclick="AñadirAlDisplay('.')">.</button>
+        </div>
+        <footer>
+            <p>© 2023 Todos los Derechos reservados por nadie</p>
+        </footer>
+    </div>
+    <script src="calculos.js"></script>
+</body>
+
+</html>
